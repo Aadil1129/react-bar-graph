@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-bar-graph/static/css/main.db42623f.css",
+    "main.js": "/react-bar-graph/static/js/main.0df46e88.js",
+    "static/js/787.3cd6f428.chunk.js": "/react-bar-graph/static/js/787.3cd6f428.chunk.js",
+    "index.html": "/react-bar-graph/index.html",
+    "main.db42623f.css.map": "/react-bar-graph/static/css/main.db42623f.css.map",
+    "main.0df46e88.js.map": "/react-bar-graph/static/js/main.0df46e88.js.map",
+    "787.3cd6f428.chunk.js.map": "/react-bar-graph/static/js/787.3cd6f428.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db42623f.css",
+    "static/js/main.0df46e88.js"
+  ]
+}
