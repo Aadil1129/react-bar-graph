@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Barchart from "./components/barchart";
+import { useState } from "react";
+import Sidebar from "./components/sidebar.js";
 
 function App() {
+  const [values, setValues] = useState([10, 20, 30]);
+
+  const data = {
+    labels: ["Easy", "Medium", "Hard"],
+    datasets: [
+      {
+        data: values,
+        borderColor: "rgb(54, 162, 235)",
+        backgroundColor: "rgb(54, 162, 235, 0.5)",
+      },
+    ],
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Sidebar values={values} valueChangehandler={(value) => setValues(value)} />
+      <div className="card-box">
+        <div className="card">
+          <Barchart data={data} />
+        </div>
+      </div>
     </div>
   );
 }

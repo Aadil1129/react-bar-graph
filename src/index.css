@@ -1,13 +1,64 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #ededed;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.sidebar {
+  height: 100vh;
+  width: 340px;
+  border-right: 1px solid #ededed;
+  background-color: white;
+  box-shadow: 0px 0px 4px 0px #e0dfdf;
+  position: absolute;
+}
+.card {
+  max-width: 700px;
+  min-width: 700px;
+  height: 70vh;
+  width: 700px;
+  margin: auto;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 0px 4px 0px #e0dfdf;
+}
+.card-box {
+  padding-top: 4rem;
+  margin-left: 16rem;
+}
+.sidebar-input-box {
+  width: 90%;
+  margin: 1.5rem auto;
+}
+.sidebar-input {
+  width: 90%;
+  margin: 4px auto;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0px 0px 4px 0px #d3d2d2;
+  padding: 10px;
+}
+.sidebar-apply-button {
+  border: none;
+  box-shadow: 0px 0px 4px 0px #e0dfdf;
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(7, 156, 224);
+  float: right;
+  margin-right: 1.5rem;
+  padding: 6px 24px;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar-apply-button:hover {
+  color: white;
+  background-color: rgb(7, 156, 224);
 }
